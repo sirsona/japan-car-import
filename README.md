@@ -1,7 +1,6 @@
 # Car Price Prediction (Japan Imports)
 
 This project build a machine learning system to predict used car prices.
-The pipeline includes web scraping, data cleaning, feature engineering
 
 The pipeline includes
 
