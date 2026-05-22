@@ -1,3 +1,4 @@
+# config.py
 #
 # Central configuration for data paths and model settings.
 

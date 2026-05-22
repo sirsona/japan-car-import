@@ -11,15 +11,7 @@ from train import (
     load_and_clean_data,
 )
 
-# =========================
-# Configuration
-# =========================
-
-# DATA_PATH = "../data/clean/5_beforward_clean_data.csv"
-#
-# MODEL_PATH = "../models/xgboost_cars_from_japan_model_v1.pkl"
-
-TARGET_VAR = "price_usd"
+TARGET = "price_usd"
 
 REMOVE_COLUMNS = [
     "price_usd",
@@ -37,7 +29,7 @@ def load_test_split():
     Recreate the same test split used during training.
     """
 
-    X, y = load_and_clean_data(DATA_PATH, TARGET_VAR, REMOVE_COLUMNS)
+    X, y = load_and_clean_data(DATA_PATH, TARGET, REMOVE_COLUMNS)
 
     _, X_test, _, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 

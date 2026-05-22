@@ -1,3 +1,4 @@
+# train.py
 import logging
 import os
 
@@ -188,7 +189,7 @@ def evaluate_on_test_set(model, X_test, y_test):
     return metrics
 
 
-# --- Execution Controller Block ---
+# CLI
 if __name__ == "__main__":
     DATA_PATH = "../data/clean/5_beforward_clean_data.csv"
     TARGET_VAR = "price_usd"
